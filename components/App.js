@@ -22,7 +22,7 @@ App = React.createClass({
         gif: gif,         // b ustawia nowego gifa z wyniku pobierania
         searchingText: searchingText  // c nowy stan dla wyszukiwanego tekstu
       });
-    }.bind(this)); 
+    } 
   },
 
   getGif: function(searchingText) { // 1. tekst + funkcja po pobraniu gifa
