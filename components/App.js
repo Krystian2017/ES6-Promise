@@ -16,13 +16,13 @@ App = React.createClass({
       loading: true    // 2. proces ładowania
     });
 
-    this.getGif(searchingText).then(gif => {  // 3. pobieranie gifa
+    this.getGif(searchingText).then((gif) => {  // 3. pobieranie gifa
       this.setState({     // 4. koniec pobierania
         loading: false,   // a przestaje sygnalizować ładowanie
         gif: gif,         // b ustawia nowego gifa z wyniku pobierania
         searchingText: searchingText  // c nowy stan dla wyszukiwanego tekstu
       });
-    } 
+    }) 
   },
 
   getGif: function(searchingText) { // 1. tekst + funkcja po pobraniu gifa
